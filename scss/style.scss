@@ -1,0 +1,77 @@
+@import "_nullstyle";
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Tapestry&display=swap');
+// null style
+.wrapper {
+    min-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    
+}
+
+//============================ Container ============================================================== //
+.container {
+    max-width: 1135px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+.container {
+    max-width: 1135px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+//============================ Header ============================================================== //
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header__container {
+    display: flex;
+    min-height: 112px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header__logo {
+    margin: 0px 308px 0px 0px;
+    padding: 10px;
+}
+.header__menu {
+
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__item {
+    margin: 0px 30px 0px 0px;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.menu__item:active {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    border-radius: 5px;
+    
+}
+.menu__item a:before{
+    content: "";
+    border-bottom: 2px solid #000000;
+    background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
+}
+.menu__link a:active {
+    
+}
+

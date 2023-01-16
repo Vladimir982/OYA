@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Tapestry&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+  color: #000;
+}
+
+a:focus,
+a:active {
+  outline: none;
+  color: #000;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat';
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.wrapper {
+  min-width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1135px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 112px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header__logo {
+  margin: 0px 308px 0px 0px;
+  padding: 10px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__item {
+  margin: 0px 30px 0px 0px;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.menu__item:active {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  border-radius: 5px;
+}
+
+.menu__item a:before {
+  content: "";
+  border-bottom: 2px solid #000000;
+  background: -webkit-gradient(linear, left top, right top, from(#6A11CB), to(#2575FC));
+  background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
+}
+
+.header__contact {
+  margin: 0px 47px 0px 0px;
+}
+
+.contact__choice-languages {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../image/icons/Polygon 1.png") 26px 5px no-repeat;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
