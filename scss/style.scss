@@ -66,8 +66,6 @@ body {
     flex-wrap: wrap;
 }
 .header__logo {
-    // margin: 0px 308px 0px 0px;
-    padding: 10px;
 }
 .header__burger-block {
     display: flex;
@@ -100,9 +98,7 @@ body {
     padding: 10px 26px;
     font-family: 'Untitled Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 120%;
+    @include fo_le(15px, 120%, 700);
     display: flex;
     align-items: center;
     text-align: center;
@@ -155,10 +151,10 @@ body {
     position: relative;
     z-index: 5;
     display: flex; 
+    justify-content: space-between;
     &__section-content1 {
         
     }
-
     &__section-content2 {
     }
 
@@ -168,32 +164,33 @@ body {
 .section-content1 {
 
     &__block {
+        padding: 112px 50px;
         background: #B5D8D6;
         max-width: 250px;
+        border-radius: 50%;
     }
 
     &__link {
+        font-family: 'Untitled Sans';
+        @include fo_le(21px, 130%, 500);
+        text-align: center;
+        text-transform: uppercase;
+        color: #3B3633;
     }
 
     &__text {
         max-width: 250px;
         font-family: 'Untitled Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 140%;
+        @include fo_le(18px, 140%, 500);
         text-align: center;
         color: #FFFFFF;
     }
 }
 .section-content2 {
-    max-width: 670px;
-    &__title {
+    &__text {
+        // max-width: 777px;
         font-family: 'Saol Display';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 140px;
-        line-height: 100%;
+        @include fo_le(140px, 100%, 300);
         text-align: center;
         color: #FFFFFF;
     }
@@ -201,6 +198,11 @@ body {
 .section-content3 {
 
     &__text {
+        max-width: 230px;
+        font-family: 'Untitled Sans';
+        @include fo_le(18px, 140%, 500);
+        text-align: center;
+        color: #FFFFFF;
     }
 
     &__block {

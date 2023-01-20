@@ -158,10 +158,6 @@ h6 {
   flex-wrap: wrap;
 }
 
-.header__logo {
-  padding: 10px;
-}
-
 .header__burger-block {
   display: flex;
 }
@@ -200,9 +196,9 @@ h6 {
   padding: 10px 26px;
   font-family: "Untitled Sans";
   font-style: normal;
-  font-weight: 700;
   font-size: 15px;
   line-height: 120%;
+  font-weight: 700;
   display: flex;
   align-items: center;
   text-align: center;
@@ -224,35 +220,51 @@ h6 {
   position: relative;
   z-index: 5;
   display: flex;
+  justify-content: space-between;
 }
 .section-content1__block {
+  padding: 112px 50px;
   background: #B5D8D6;
   max-width: 250px;
+  border-radius: 50%;
+}
+.section-content1__link {
+  font-family: "Untitled Sans";
+  font-size: 21px;
+  line-height: 130%;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3B3633;
 }
 .section-content1__text {
   max-width: 250px;
   font-family: "Untitled Sans";
-  font-style: normal;
-  font-weight: 500;
   font-size: 18px;
   line-height: 140%;
+  font-weight: 500;
   text-align: center;
   color: #FFFFFF;
 }
 
-.section-content2 {
-  max-width: 670px;
-}
-.section-content2__title {
+.section-content2__text {
   font-family: "Saol Display";
-  font-style: normal;
-  font-weight: 300;
   font-size: 140px;
   line-height: 100%;
+  font-weight: 300;
   text-align: center;
   color: #FFFFFF;
 }
 
+.section-content3__text {
+  max-width: 230px;
+  font-family: "Untitled Sans";
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 500;
+  text-align: center;
+  color: #FFFFFF;
+}
 .main-block__image {
   position: absolute;
   width: 100%;
