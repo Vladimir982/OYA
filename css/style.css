@@ -87,7 +87,7 @@ h6 {
 }
 
 @font-face {
-  font-family: "SaolDisplay-Regular";
+  font-family: "Saol Display";
   src: url("../fonts/4c4c08af466e9ad071b6d69cf44093df.eot"); /* IE9*/
   src: url("4c4c08af466e9ad071b6d69cf44093df.eot?#iefix") format("embedded-opentype"), url("../fonts/4c4c08af466e9ad071b6d69cf44093df.woff2") format("woff2"), url("../fonts/4c4c08af466e9ad071b6d69cf44093df.woff") format("woff"), url("../fonts/4c4c08af466e9ad071b6d69cf44093df.ttf") format("truetype"), url("../fonts/4c4c08af466e9ad071b6d69cf44093df.svg") format("svg"); /* iOS 4.1- */
   font-weight: normal;
@@ -202,6 +202,7 @@ h6 {
 }
 
 .header__burger span:nth-child(4) {
+  width: 100%;
   top: -10px;
   height: 30px;
   content: url("../image/main-page/icons/Vector.png");
@@ -211,6 +212,7 @@ h6 {
 }
 
 .header__burger span:nth-child(5) {
+  width: 100%;
   height: 30px;
   top: -10px;
   content: url("../image/main-page/icons/Vector.png");
@@ -220,6 +222,7 @@ h6 {
 }
 
 .header__burger span:nth-child(6) {
+  width: 100%;
   height: 30px;
   transition: all 0.8s ease 0s;
   top: -10px;
@@ -229,9 +232,8 @@ h6 {
 }
 
 .header__burger.active span:nth-child(1) {
-  left: -5px;
   opacity: 0;
-  transition: all 0.5s ease 0s;
+  transition: all 0.25s ease 0s;
 }
 
 .header__burger.active span:nth-child(2) {
@@ -248,19 +250,19 @@ h6 {
 
 .header__burger.active span:nth-child(4) {
   transition: all 0.8s ease 0s;
-  transform: translate(8px, 0px);
+  transform: translate(5px, 3px);
   opacity: 1;
 }
 
 .header__burger.active span:nth-child(5) {
   transition: all 0.8s ease 0s;
-  transform: translate(0px, 8px);
+  transform: translate(0px, -6px);
   opacity: 1;
 }
 
 .header__burger.active span:nth-child(6) {
   transition: all 0.8s ease 0s;
-  transform: translate(-8px, 0px);
+  transform: translate(-5px, 3px);
   opacity: 1;
 }
 
@@ -286,6 +288,12 @@ h6 {
   transition: all 0.5s ease-in-out 0s;
 }
 
+.header__burger-title.hidden,
+.header__logo.hidden,
+.header__block.hidden {
+  display: none;
+}
+
 .filter-blur {
   width: 100%;
   -webkit-backdrop-filter: blur(25px);
@@ -307,12 +315,125 @@ h6 {
   color: #FFFFFF;
 }
 
+.header__menu-content {
+  position: absolute;
+  width: 100%;
+  left: -100%;
+  z-index: 10;
+  background: linear-gradient(0deg, rgba(54, 58, 69, 0.96), rgba(54, 58, 69, 0.96)), url(image.png);
+  transition: all 1s ease 0s;
+}
+
+.header__menu-content.active {
+  transition: all 1s ease 0s;
+  top: 0%;
+  left: 0%;
+}
+
+.header__menu-container {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 10%;
+}
+
+.header__body {
+  max-width: 1180px;
+  margin: 10% 0px 65px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu .menu__list .menu__item .menu__link {
+  font-family: "Saol Display";
+  font-size: 70px;
+  line-height: 100%;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.header__menu .menu__list .menu__item:not(:last-child) {
+  margin: 0px 0px 30px 0px;
+}
+
+[class*=contacts__title],
+[class*=contacts__link] {
+  font-family: "Untitled Sans";
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.head-contacts__title {
+  margin: 0px 0px 53px 0px;
+}
+
+.head-contacts__block {
+  margin: 0px 0px 120px 0px;
+}
+.head-contacts__block .head-contacts__email {
+  font-family: "Untitled Sans";
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.head-contacts__list .head-contacts__item:not(:last-child) {
+  margin: 0px 0px 33px 0px;
+}
+
+.head-contacts__paper-block {
+  margin: 207px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+.head-contacts__paper-block .head-contacts__link-download {
+  padding: 0px 0px 0px 18px;
+  font-family: "Untitled Sans";
+  font-size: 15px;
+  line-height: 120%;
+  font-weight: 700;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header-copyright {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-copyright__container {
+  padding: 28px 0px;
+  max-width: 1180px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-copyright__container p {
+  font-family: "Untitled Sans";
+  font-size: 15px;
+  line-height: 140%;
+  font-weight: 500;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
 .page {
   flex: 1 1 auto;
 }
 
 .page__main-block {
   position: relative;
+}
+
+.main-block__container {
+  transition: all 0.5s ease 0s;
+}
+
+.main-block__container.hidden {
+  transition: all 0.8s ease 0s;
+  opacity: 0;
 }
 
 .main-block__padding {
